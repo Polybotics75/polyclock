@@ -1,0 +1,125 @@
+:root{
+    --white: #FFFFFF;
+    --black: #222222;
+    --lwhite: #F5F5F5;
+    --dpale: #D3D3D3;
+    --primary: #800080;
+}
+
+*,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial-black;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--lwhite);
+    transistion: 1.5s ease all;
+}
+
+body.dark{
+    --black: #C6C6C6;
+    --lwhite: #333333;
+    --white: #000000;
+    --dpale: #666666;
+}
+
+main{
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.title-tab{
+    width: 100%;
+    padding: 15px 10px;
+    background: var(--white);
+    border-radius: 1.2rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+    box-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.3);
+}
+
+.clock-tab{
+    width: 100%;
+    padding: 25px;
+    margin: 15px 0;
+    background: var(--white);
+    border-radius: 1.2rem;
+    box-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.3);
+}
+
+.clock-screen{
+    width: 100%;
+    background: var(--lwhite);
+    border-radius: calc(1.2rem - 15px);
+}
+
+.date-tab{
+    width: 100%;
+    padding: 10px 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date{
+    min-width: fit-content;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dpale);
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+
+.date.active{
+    color: var(--black);
+}
+
+.time-tab{
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    color: var(--black);
+}
+
+.time{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.era{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.date-show{
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.switch-tab{
+    width: 100%;
+    padding: 20px 10px;
+    background: var(--primary);
+    border-radius: 1.2rem;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
